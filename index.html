@@ -6,8 +6,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+        },
+      },
+    },
+  }
+</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head> 
-<body>
+<body class="font-sans bg-[#070A12]">
 <!--  NAVBAR  -->
 <header class="bg-gradient-to-r from-[#1a0b2e] via-[#12071f] to-[#1a0b2e]">
   <div class="w-full px-0 lg:px-6 lg:max-w-7xl lg:mx-auto">
