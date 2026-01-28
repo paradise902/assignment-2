@@ -1,8 +1,9 @@
-p {
-    border: 2px solid red;
 
-}
+@import "tailwindcss";
 
-img {
-    border: 3px solid black;
+/* best practice */
+*{
+    box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
 }
