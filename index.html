@@ -61,33 +61,83 @@
 
 
 <!-- HERO SECTION  -->
-<section class="hero ">
-    <div class="hero-inner">
-        <div class="mic-wrapper">
-            <img src="./assets/hero-circle.png" alt="miccircle">
-         </div>
+<section
+  class="relative w-full min-h-screen
+         bg-cover bg-center bg-no-repeat
+         flex items-center justify-center
+         overflow-hidden"
+  style="background-image: url('./assets/hero-bg.png');"
+>
+  <!-- CONTENT WRAPPER -->
+  <div class="relative z-10 flex flex-col items-center text-center px-4">
 
-         <div class="microfone">
-            <img src="./assets/microphone.png" alt="mic">
-         </div>
+    <!-- MIC CIRCLE -->
+    <div class="relative">
+      <div
+        class="w-[350px] h-[350px] rounded-full
+               bg-gradient-to-br from-yellow-400 via-pink-500 to-purple-600
+               border-[6px] border-purple-800
+               flex items-center justify-center"
+      >
+        <img
+          src="./assets/microphone.png"
+          alt="Microphone"
+          class="w-[170px] h-[170px] object-contain"
+        />
+      </div>
 
-         <div>
-          <button class="hero-button">NEW</button>
-         </div>
-
-         <div class="hero-slogan">
-            <h1>TechWave</h1>
-            <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
-
-            <div class="hero-slogan-btns flex">
-              <button  class="btn-1 flex"><img src="./assets/spotify.png" alt="spotify logo">Listen On Spotify</button> 
-              <button  class="btn-2 flex"><img src="./assets/message.png" alt="message">Subscribe</button> 
-            </div>
-
-         </div>
-
+      <!--  BADGE  -->
+      <span
+        class="absolute top-[22px] right-[38px]
+               bg-emerald-400 text-black
+               text-xs font-bold
+               px-3 py-1 rounded-full
+                shadow-lg shadow-emerald-500"
+      >
+        NEW
+      </span>
     </div>
+
+    <!-- TITLE -->
+    <h1 class="mt-10 text-5xl font-extrabold text-white">
+      Tech<span class="bg-gradient-to-r from-fuchsia-500 to-purple-600 bg-clip-text text-transparent">Wave</span>
+    </h1>
+
+    <!-- SUBTITLE -->
+    <p class="mt-4 max-w-xl text-sm text-gray-300">
+      Your daily dose of tech insights, productivity hacks, and personal growth.
+    </p>
+
+    <!-- BUTTONS -->
+    <div class="mt-8 flex gap-4 flex-wrap justify-center">
+      <a
+        href="#"
+        class="flex items-center gap-2 px-6 py-3 rounded-full
+               bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600
+               text-white font-medium hover:opacity-90 transition"
+      >
+        <img src="./assets/spotify.png" class="w-4" />
+        Listen on Spotify
+      </a>
+
+      <a
+        href="#"
+        class="flex items-center gap-2 px-6 py-3 rounded-full
+               border border-emerald-400
+               text-emerald-400 font-medium
+               hover:bg-emerald-400 hover:text-black transition"
+      >
+        <img src="./assets/message.png" alt="">
+        Subscribe
+      </a>
+    </div>
+
+  </div>
 </section>
+
+
+
+
 
 </body>
 </html>
